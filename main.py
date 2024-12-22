@@ -34,7 +34,7 @@ def datos_personas():
     # Conectar a la base de datos y ejecutar la consulta
     conexion = obtener_conexion()
     cursor = conexion.cursor()
-    cursor.execute("SELECT * FROM persona")
+    cursor.execute("SELECT * FROM PERSONA")
     
     # Obtener los nombres de las columnas
     columnas = [columna[0] for columna in cursor.description]
