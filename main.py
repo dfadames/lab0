@@ -15,7 +15,7 @@ def obtener_conexion():
 
     return pymysql.connect(
         host=host,
-        port=port,
+        port=int(port),
         user=user,
         password=password,
         database=database
