@@ -3,15 +3,22 @@
 from flask import Flask, render_template, request, redirect, url_for, session, jsonify
 import pymysql
 from pymysql import MySQLError 
-
+import os
 app = Flask(__name__)
 
 def obtener_conexion():
+    host = os.getenv('DB_HOST')  # Default to 'localhost' if not set
+    user = os.getenv('DB_USER')
+    port = os.getenv('DB_PORT')         
+    password = os.getenv('DB_PASSWORD')
+    database = os.getenv('laboratorio0')
+
     return pymysql.connect(
-        host='localhost',
-        user='root',
-        password='2765',
-        database='laboratorio0'
+        host=host,
+        port=int(port),  # Ensure the port is an integer
+        user=user,
+        password=password,
+        database=database
     )
 
 
@@ -20,7 +27,6 @@ def obtener_conexion():
 @app.route('/')
 def index():
     return render_template("index.html")
-
 
 # Route for municipios.html
 @app.route("/api/persona", methods=["GET"])
