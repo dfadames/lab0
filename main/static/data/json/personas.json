@@ -1,0 +1,41 @@
+[
+    {
+      "cedula": "1234567890",
+      "correo": "juan.partines@gmail.com",
+      "estado_civil": "Soltero",
+      "fecha_nacimiento": "Tue, 15 May 1990 00:00:00 GMT",
+      "id": 1,
+      "p_Apellido": "Partines",
+      "p_Nombre": "Juan",
+      "s_Apellido": "Gómez",
+      "s_Nombre": "camilo",
+      "sexo": "Masculino",
+      "telefono": "3001234567"
+    },
+    {
+      "cedula": "0987654321",
+      "correo": "ana.rodriguez@gmail.com",
+      "estado_civil": "Casada",
+      "fecha_nacimiento": "Fri, 25 Oct 1985 00:00:00 GMT",
+      "id": 2,
+      "p_Apellido": "Rodríguez",
+      "p_Nombre": "Ana",
+      "s_Apellido": "López",
+      "s_Nombre": "María",
+      "sexo": "Femenino",
+      "telefono": "3109876543"
+    },
+    {
+      "cedula": "1122334455",
+      "correo": "luis.martinez@gmail.com",
+      "estado_civil": "Divorciado",
+      "fecha_nacimiento": "Mon, 20 Jul 1992 00:00:00 GMT",
+      "id": 3,
+      "p_Apellido": "Martínez",
+      "p_Nombre": "Luis",
+      "s_Apellido": "Díaz",
+      "s_Nombre": null,
+      "sexo": "Masculino",
+      "telefono": "3201239876"
+    }
+  ]
