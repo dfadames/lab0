@@ -7,19 +7,20 @@ import os
 app = Flask(__name__)
 
 def obtener_conexion():
-    host = os.getenv('DB_HOST', 'localhost')  # Default to 'localhost' if not set
-    port = os.getenv('DB_PORT', 3306)         # Default to port 3306 if not set
-    user = os.getenv('DB_USER', 'root')
-    password = os.getenv('DB_PASSWORD', '2765')
-    database = os.getenv('DB_NAME', 'laboratorio0')  # Make sure this is correct
+    host = os.getenv('DB_HOST')  # Default to 'localhost' if not set
+    port = os.getenv('DB_PORT')         # Default to port 3306 if not set
+    user = os.getenv('DB_USER')
+    password = os.getenv('DB_PASSWORD')
+    database = os.getenv('DB_NAME')  # Make sure this is correct
 
     return pymysql.connect(
         host=host,
-        port=int(port),
+        port=port,
         user=user,
         password=password,
         database=database
     )
+
 
 
 @app.route('/index.html')
